@@ -1,0 +1,151 @@
+* {
+  font-family: "Palanquin", sans-serif;
+}
+.container {
+  display: flex;
+  height: 94.4vh;
+}
+.formImg {
+  background-image: url(https://source.unsplash.com/collection/8172461/1200xauto);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 60vw;
+  height: 100vh;
+}
+.formTop {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.formTop h1 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  margin-bottom: 2.5rem;
+}
+.formTop h3 {
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  margin: 1rem 0 2.5rem 0;
+}
+.userForm {
+  display: flex;
+  flex-direction: column;
+  width: 40vw;
+  align-items: left;
+  margin-top: 5rem;
+}
+input {
+  width: 37.5vw;
+  height: 1.5vh;
+  padding: 0.6rem 0.5rem;
+  margin: 0.8rem 0 0.8rem 0.5rem;
+  font-size: 1.1rem;
+  border-radius: 6px;
+  border-color: lightgray;
+}
+.formButton {
+  width: 38vw;
+  margin: 0.5rem 0 0.4rem 0;
+}
+.accountLogin {
+  display: flex;
+  justify-content: space-between;
+}
+button {
+  width: 38.5vw;
+  background-color: lightgreen;
+  font-weight: 900;
+  font-size: 1rem;
+  text-transform: uppercase;
+  padding: 0.2rem;
+  color: white;
+  border-radius: 8px;
+  margin-bottom: 0.6rem;
+  margin-left: 0.5rem;
+}
+button:disabled {
+  color: darkgray;
+  background-color: lightgray;
+}
+.ready:hover {
+  background-color: darkgreen;
+  transition: ease-in 0.2s;
+  cursor: pointer;
+  font-weight: 900;
+  padding: 0.2rem;
+  color: white;
+  border-radius: 8px;
+}
+.lockImg {
+  height: 40px;
+  width: 40px;
+}
+.account {
+  text-decoration: none;
+  color: #a9a9a9;
+  margin-left: 0.5rem;
+}
+.error {
+  color: red;
+  font-weight: 900;
+  margin-left: 1vw;
+}
+
+/**********************       TABLET VIEW     *************************/
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .userForm {
+    margin-left: 2rem;
+  }
+  .formButton button {
+    width: 40vw;
+  }
+  .formImg {
+    width: 50vw;
+  }
+  .accountLogin {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem;
+  }
+  .account {
+    margin-bottom: 1rem;
+  }
+}
+
+/**********************       MOBILE VIEW     *************************/
+@media only screen and (min-width: 375px) and (max-width: 767px) {
+  .container {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+  }
+  .userForm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .formImg {
+    display: none;
+  }
+  input {
+    width: 80vw;
+  }
+  .formButton {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .accountLogin {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .account {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+}

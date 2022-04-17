@@ -1,0 +1,90 @@
+.featContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  background-color: #f6f6f6;
+}
+.title {
+  margin-top: 6rem;
+  font-size: 2.8rem;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+.title-span {
+  border-bottom: 5px solid;
+  border-image-slice: 1;
+  border-width: 5px;
+}
+.gradient {
+  border-image-source: linear-gradient(to right, #fda1a1, #ff3b3f);
+}
+.features {
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+  width: 65vw;
+  margin: 7rem;
+}
+.feature {
+  width: 15vw;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 900;
+  margin: 1rem 0rem;
+}
+.feature img {
+  margin-bottom: 2.5rem;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+}
+.feature p {
+  margin-top: 1.5rem;
+  color: #a9a9a9;
+  font-size: 1.1rem;
+  font-weight: 500;
+  text-transform: none;
+  line-height: initial;
+}
+
+/**********************       TABLET VIEW     *************************/
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .title {
+    font-size: 2.6rem;
+  }
+  .features {
+    width: 60vw;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 4rem;
+  }
+  .feature {
+    width: 25vw;
+    margin-top: 2rem;
+  }
+}
+
+/**********************       MOBILE VIEW     *************************/
+@media only screen and (min-width: 375px) and (max-width: 767px) {
+  .title {
+    font-size: 2.1rem;
+  }
+  .features {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+  }
+  .feature {
+    width: 65vw;
+  }
+  .feature img {
+    width: 17vw;
+  }
+  .feature p {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+}
